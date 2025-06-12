@@ -6,8 +6,6 @@
 
 CodeLens is a powerful, all-in-one Chrome extension and web application designed to simplify code comprehension and documentation. Leveraging llama model , CodeLens enables users to summarize code snippets, define technical terms, and generate sharable documentation—directly within the browser.
 
----
-
 ## Table of Contents
 
 - [Overview](#overview)
@@ -26,8 +24,6 @@ CodeLens is a powerful, all-in-one Chrome extension and web application designed
 - [User Stories](#user-stories)
 - [Acknowledgement](#acknowledgments)
 
----
-
 ## Overview
 
 Modern software development often involves reading unfamiliar code, managing extensive codebases, and communicating complex ideas.
@@ -37,9 +33,7 @@ CodeLens addresses these challenges by offering:
 - **Instant Term Definitions:** Provide immediate explanations for technical terms for non-technical users.
 - **File Upload and Analysis:** Enable users to upload entire code files for structured summarization.
 - **Documentation Generation:** Automatically generate and share detailed documentation in multiple formats, including direct integration with Google Docs.
-
----
-
+  
 ## Problem Statement
 
 Developers and non-technical users alike struggle with:
@@ -49,8 +43,6 @@ Developers and non-technical users alike struggle with:
 - **Technical Jargon:** Non-technical team members face challenges with technical terminology.
 
 CodeLens alleviates these pain points by providing an all-in-one solution that automates code summarization, term definition, and documentation generation, ensuring that knowledge is accessible and shareable.
-
----
 
 ## Features
 
@@ -65,13 +57,9 @@ CodeLens alleviates these pain points by providing an all-in-one solution that a
 - Option to download generated responses as documentation
 - Automatically generated shareable documentation links
 
----
-
 ## Tech-Stack
 
 <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/html.png" alt="HTML5" height="50" style="margin-left: 10px; margin-right: 10px;" /> <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/css.png" alt="CSS" height="50" style="margin-left: 10px; margin-right: 10px;" /> <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/react.png" alt="React" height="50" style="margin-left: 10px; margin-right: 10px;" /> <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/typescript.png" alt="TypeScript" height="50" style="margin-left: 10px; margin-right: 10px;" /> <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/spring_boot.png" alt="Spring Boot" height="50" style="margin-left: 10px; margin-right: 10px;" /> <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/mongodb.png" alt="MongoDB" height="50" style="margin-left: 10px; margin-right: 10px;" /> <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/docker.png" alt="Docker" height="50" style="margin-left: 10px; margin-right: 10px;" /> <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/postman.png" alt="Postman" height="50" style="margin-left: 10px; margin-right: 10px;" /> <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/sonarqube.png" alt="SonarCube" height="50" style="margin-left: 10px; margin-right: 10px;" /> <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/swagger.png" alt="Swagger" height="50" style="margin-left: 10px; margin-right: 10px;" />
-
----
 
 ## Dependencies
 
@@ -146,8 +134,6 @@ CodeLens alleviates these pain points by providing an all-in-one solution that a
 - **react**: ^19.0.0
 - **react-dom**: ^19.0.0
 - **react-router-dom**: ^7.1.4
-
----
 
 ## Installation and Setup
 
@@ -289,8 +275,6 @@ Use this if you're deploying the optimized version.
 ➡ Frontend at: `http://localhost:5173`  
 ➡ Backend at: `http://localhost:8000` (running `prod` profile`)
 
----
-
 ## Project Structure
 
 ```bash
@@ -304,25 +288,17 @@ Use this if you're deploying the optimized version.
   └── README.md # Project documentation
 ```
 
----
-
 ## User Manual
 
 [User Manual](./docs/user-manual.md)
-
----
 
 ## API Documentation
 
 [Swagger Docs](http://csci5308-vm1.research.cs.dal.ca:8000/swagger-ui/index.html#/)
 
----
-
 ## Smell Analysis Report
 
 [Smell Analysis Report](https://docs.google.com/spreadsheets/d/1uhpBUSJhWqnZ6DvAtzp6NBU_x_x_ZIbCe3IJgqEHIdc/edit?usp=sharing)
-
----
 
 ## TDD Commit Hash
 
@@ -334,8 +310,6 @@ Use this if you're deploying the optimized version.
 |               | [49d070](https://git.cs.dal.ca/courses/2025-winter/csci-5308/group01/-/merge_requests/67/diffs?commit_id=49d07014098d7c5846191efc175085385e6e762c) | [6ce781](https://git.cs.dal.ca/courses/2025-winter/csci-5308/group01/-/merge_requests/67/diffs?commit_id=6ce7819638bfb3b91c74ee6090e649025ad2f029) |
 | Session       | [90682c](https://git.cs.dal.ca/courses/2025-winter/csci-5308/group01/-/merge_requests/74/diffs?commit_id=90682c1ca90aad8d94358b0f75afd9603d3bbd2f) | [8b4aae](https://git.cs.dal.ca/courses/2025-winter/csci-5308/group01/-/merge_requests/74/diffs?commit_id=8b4aae08e03dd7efebb113e5f53776ddf7b74efa) |
 | Summary       | [ea345d](https://git.cs.dal.ca/courses/2025-winter/csci-5308/group01/-/merge_requests/76/diffs?commit_id=ea345d410394ce4a9fbbf2f58bade0dcdb2dfce5) | [e1e0a8](https://git.cs.dal.ca/courses/2025-winter/csci-5308/group01/-/merge_requests/76/diffs?commit_id=2f86f697c6b5b813086b26769cfe640a1f2d1945) |
-
----
 
 ## Code Coverage
 
@@ -349,8 +323,6 @@ Use this if you're deploying the optimized version.
 | ShareableLink     | 100%                  | 97%                   |
 | Summary           | 100%                  | 100%                  |
 
----
-
 ## Contributors
 
 - B00863868: Akshat Gulati - (ak922007@dal.ca)
@@ -360,8 +332,6 @@ Use this if you're deploying the optimized version.
 - B01031699: Awwal Algabe - (aw5565230@dal.ca)
 
 [Individual Contribution](https://docs.google.com/spreadsheets/d/1yqmBvZs3LjlS_9DFFfQ_KsvACKDGzN9m59G6mXUygIQ/edit?gid=0#gid=0)
-
----
 
 ## User Stories
 
@@ -386,8 +356,6 @@ She clicks "Summarize" and gets a popup:
 
 With this quick explanation, she applies it to her project to optimize an input field’s search functionality.
 
----
-
 ### Story 2: Contextual Definitions
 
 Mark, a product manager with limited technical knowledge, is reviewing a design document online. He stumbles across the term **"REST API"** and isn’t sure what it means.
@@ -397,8 +365,6 @@ Mark, a product manager with limited technical knowledge, is reviewing a design 
   > "A set of rules for web services to communicate over HTTP using methods like GET and POST."
 
 Now understanding the term, Mark confidently discusses integration needs with his development team.
-
----
 
 ### Story 3: Save and Download Responses
 
@@ -411,8 +377,6 @@ Emma, a software engineer, frequently uses the Chrome extension to summarize cod
 - She also has the option to download the response as a `.docx` file for documentation purposes.
 
 This feature helps Emma organize her technical notes and easily share insights with her team.
-
----
 
 ### Story 4: Automated Documentation Generator
 
@@ -436,8 +400,6 @@ She uploads the file to the website and clicks **"Generate Documentation."**
 - The tool creates a detailed Google Doc with class and method descriptions.
 - Priya shares the link with her client, who approves the work without needing further clarification.
 
----
-
 ### Story 5: Lightweight Extension with Web Integration
 
 Jake, a full-stack developer, is browsing a tutorial site. He selects a small CSS snippet:
@@ -456,8 +418,6 @@ Later, he tries a **500-line JavaScript file**, and the extension prompts him to
 
 - Jake uploads it there, receives a full analysis, and appreciates the seamless switch between tools.
 
----
-
 ## Acknowledgments
 
 Special thanks to:
@@ -465,8 +425,6 @@ Special thanks to:
 - Dalhousie University, Halifax, Nova Scotia
 - CSCI 5308 Course Staff - [Prof. Tushar Sharma, TA Saurabh Rajput]
 - Client Team - Group06
-
----
 
 ## THANK YOU FOR CHOOSING CODELENS!
 
