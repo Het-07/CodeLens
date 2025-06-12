@@ -1,0 +1,26 @@
+.code-model-toggle {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4px;
+  }
+  
+  .code-model-toggle.enabled {
+    background-color: var(--primary);
+    color: white;
+  }
+  
+  .code-model-toggle.disabled {
+    background-color: #f0f0f0;
+    color: #666;
+    border: 1px solid #ddd;
+  }
+  
+  /* Remove any margins or paddings that might interfere with the layout */
+  .code-model-toggle.p-button {
+    margin: 0;
+    padding: 0;
+  }

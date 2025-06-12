@@ -1,0 +1,56 @@
+.otp-verify-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-card-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+
+.logo-otp {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo-otp img {
+  width: 20%;
+}
+
+.otp-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.otp-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.reset-otp {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.reset-otp a {
+  font-size: 14px;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.reset-otp a:hover {
+  text-decoration: underline;
+}

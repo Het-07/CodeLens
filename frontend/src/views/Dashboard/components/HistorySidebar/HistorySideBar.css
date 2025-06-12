@@ -1,0 +1,135 @@
+/* Sidebar */
+.history-sidebar {
+  flex: 3;
+  background-color: var(--primary);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* New Chat Button */
+.new-chat-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #444654;
+  color: var(--neutral);
+  border: none;
+  padding: 10px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.new-chat-btn:hover {
+  background-color: #565869;
+}
+
+/* Plus Icon */
+.plus-icon {
+  font-size: 12px;
+}
+
+/* History List (Scrollable) */
+.history-list {
+  overflow-y: auto;
+  flex-grow: 1;
+  padding-right: 5px; /* Avoids scrollbar overlap */
+  scrollbar-width: thin;
+  scrollbar-color: #565869 transparent;
+}
+
+/* Scrollbar Styling */
+.history-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.history-list::-webkit-scrollbar-thumb {
+  background-color: #565869;
+  border-radius: 5px;
+}
+
+.history-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* History Tab */
+.history-tab {
+  padding: 10px;
+  margin-bottom: 6px;
+  border: 1px solid var(--primary);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  height: 80px; /* Reduced Height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.history-tab:hover {
+  background-color: var(--neutral);
+}
+
+.active-history-tab {
+  background-color: var(--neutral);
+}
+
+.active-history-tab:hover {
+  background-color: var(--neutral);
+}
+
+/* Session Title */
+.history-tab h2 {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--dark);
+  margin: 0;
+}
+
+/* Session Date */
+.history-tab p.date {
+  font-size: 0.7rem;
+  color: var(--primary);
+  margin: 0;
+}
+
+/* Session Summary */
+.history-tab p.summary {
+  font-size: 0.75rem;
+  color: var(--dark);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Remove default padding from PrimeReact Card */
+.p-card .p-card-body {
+  padding: 0;
+}
+
+.p-card .p-card-content {
+  padding: 0;
+}
+
+.tab-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Input Field for Inline Editing */
+.session-name-input {
+  font-size: 0.9rem;
+  font-weight: bold;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  padding: 4px;
+  width: 90%;
+  outline: none;
+}

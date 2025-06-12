@@ -1,0 +1,301 @@
+.landing-page {
+  display: flex;
+  height: 100vh;
+}
+
+.history-sidebar {
+  flex: 2;
+  background-color: var(--secondary);
+  color: var(--neutral);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.history-sidebar h2 {
+  color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* New Chat Button */
+.new-chat {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.new-chat-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #444654;
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.new-chat-btn:hover {
+  background-color: #565869;
+}
+
+/* Plus Icon */
+.plus-icon {
+  font-size: 12px;
+}
+
+/* Search Container */
+.search-container {
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+}
+
+/* Search Icon */
+.search-icon {
+  position: absolute;
+  left: 10px;
+  z-index: 1;
+  color: var(--accent);
+  font-size: 12px;
+}
+
+/* Custom styling for the TextInput component when used in search */
+.search-container .custom-input {
+  width: 100%;
+  height: 40px;
+  padding: 10px 12px 10px 30px;
+  background-color: var(--neutral);
+  color: var(--dark);
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Sessions list container */
+.sessions-list {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 5px;
+}
+
+/* No results message */
+.no-results {
+  text-align: center;
+  padding: 15px;
+  color: var(--dark);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+/* History List (Scrollable) */
+.history-list {
+  overflow-y: auto;
+  flex-grow: 1;
+  padding-right: 5px;
+  scrollbar-width: thin;
+  scrollbar-color: #565869 transparent;
+}
+
+/* Scrollbar Styling */
+.history-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.history-list::-webkit-scrollbar-thumb {
+  background-color: #565869;
+  border-radius: 5px;
+}
+
+.history-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* History Tab */
+.history-tab {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--primary);
+  background-color: var(--gray);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.history-tab:hover {
+  background-color: var(--grey);
+}
+
+.active-history-tab {
+  background-color: var(--neutral);
+}
+
+.active-history-tab:hover {
+  background-color: var(--neutral);
+}
+
+/* Session Title */
+.history-tab h2 {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--neutral);
+  margin: 0;
+}
+
+.active-history-tab h2 {
+  color: var(--dark);
+}
+
+/* Session Date */
+.history-tab p.date {
+  font-size: 0.7rem;
+  color: var(--neutral);
+  margin: 0;
+}
+
+.active-history-tab p.date {
+  color: var(--dark);
+}
+
+/* Session Summary */
+.history-tab p.summary {
+  font-size: 0.75rem;
+  color: var(--dark);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.p-card {
+  box-shadow: none;
+}
+
+/* Remove default padding from PrimeReact Card */
+.p-card .p-card-body {
+  padding: 0;
+}
+
+.p-button.p-button-icon-only.p-button-rounded {
+  border-radius: 50%;
+  height: 2rem;
+}
+
+.p-button.p-button-icon-only {
+  width: 2rem;
+  padding: 0.75rem 0;
+}
+
+.p-card .p-card-content {
+  padding: 0;
+}
+
+.tab-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Input Field for Inline Editing */
+.session-name-input {
+  font-size: 0.9rem;
+  font-weight: bold;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  padding: 4px;
+  width: 90%;
+  outline: none;
+}
+
+.main-content {
+  flex: 8;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: var(--neutral);
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.main-content-header {
+  width: 79%;
+  position: fixed;
+  top: 0;
+  height: 55px;
+  border-bottom: 1px solid var(--primary);
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-header {
+  display: flex;
+  align-items: center;
+  padding-left: 2%;
+}
+
+.session-title-header {
+  font-size: 1rem;
+  color: var(--dark);
+}
+
+.main-content-body {
+  flex-grow: 1;
+  padding-top: 60px;
+  height: 94%;
+}
+
+.chat-header {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  margin-bottom: 16px;
+}
+
+.chat-input {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px;
+  background-color: white;
+  border-top: 1px solid var(--primary);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

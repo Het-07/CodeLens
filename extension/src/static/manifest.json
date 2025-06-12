@@ -1,0 +1,42 @@
+{
+    "name": "Codelens Extension",
+    "version": "1.0.1",
+    "manifest_version": 3,
+    "web_accessible_resources": [
+    {
+      "resources": ["https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap", "svg/file.svg"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+    "icons": {
+      "16": "images/icon.png",
+      "48": "images/icon.png",
+      "128": "images/icon.png"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+      "16": "images/icon.png",
+      "32": "images/icon.png",
+      "48": "images/icon.png",
+      "128": "images/icon.png"
+    }
+    },
+    "permissions": ["scripting", "storage","cookies"], 
+    "host_permissions": ["<all_urls>"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": [
+          "content.js"
+        ],
+        "type": "module",
+        "run_at": "document_idle"
+      }
+    ],
+    "background": {
+      "service_worker": "background.js",
+      "type": "module"
+    }
+  }
+  

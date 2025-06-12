@@ -1,0 +1,108 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form {
+  background: var(--secondary);
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn 0.3s ease-in;
+  height: 100%;
+  text-align: center;
+
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 40%;
+}
+
+
+.login-form h2 {
+  color: #1d4e4e;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #176B87;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.signup-link {
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.signup-link span {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.forgot-password {
+  text-align: center;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+.forgot-password a span {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.forgot-password a span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.error-text {
+  text-align: left;
+  color: var(--accent);
+}

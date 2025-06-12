@@ -1,0 +1,18 @@
+.custom-button {
+  width: 100%;
+  height: 40px;
+  background-color: #176b87;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Poppins";
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+
+.custom-button:hover {
+  background-color: #115569;
+}

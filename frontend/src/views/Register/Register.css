@@ -1,0 +1,114 @@
+.registration-body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo-container {
+  flex: 4;
+  background-color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 10px 0px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 2;
+}
+
+.logo-register {
+  width: 100%;
+}
+
+.logo-register img {
+  height: 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+h1,
+h2 {
+  font-family: "Poppins-SemiBold";
+  font-size: 26px;
+  color: var(--dark);
+}
+
+.description {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Poppins";
+  color: var(--dark);
+  padding: 0 10% 0 10%;
+}
+
+.description-container {
+  width: 100%;
+  text-align: center;
+}
+
+.svg-container {
+  width: 100%;
+}
+
+.svg-container img {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  background: var(--neutral);
+  box-shadow: inset -5px 0px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+.input-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.input-group {
+  width: 100%;
+  margin: 5px 0px 5px 0px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  color: var(--primary);
+}
+
+.error-text {
+  color: var(--accent);
+}
+
+.signin-container {
+  display: flex;
+  justify-content: center;
+}
+
+.signin-text {
+  color: var(--primary);
+}
+
+.signin-link {
+  text-decoration: underline;
+}

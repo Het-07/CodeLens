@@ -1,0 +1,15 @@
+spring.application.name=backend
+spring.data.mongodb.port = 27017
+spring.data.mongodb.host = localhost
+spring.data.mongodb.database = devdb
+#spring.data.mongodb.username=admin
+#spring.data.mongodb.password=admin
+spring.data.mongodb.authentication-database=admin
+app.secret.key=778d76abdb5950142dec2c588bac448b654a3809ad20b15c810a15f811ab6e5e100cb6ee81e7b9519128edb7f1543229ae8687ee6c5ba3870f2b3a11808f02ca19e381b13b616919eccba920e66c604f88ef3ebb3cc7ef3284fc5fdb165f5a585428cced19ee9613b606951648a7d4467e4390e09c69921b7ef869cb88bd27401a7100dfc132cf6b7485c2112ddbc7943e40a8514013c8e0c2849c64fdf3de245511ee6e3f7fe6e8ecb564388d8ad006e083c6520900879a05451291a6011393b0ad4ca5b71fa3b24357cb54df78f4170216d485dc7fc9d0f19dbb044e0417e4df4b2b015a31bd0891ba771bdf84474cea2c1a7de105390edcd3adbb7ae63fd1
+logging.level.web=DEBUG 
+spring.mail.host=smtp.gmail.com
+spring.mail.username=csci5308.group01@gmail.com
+spring.mail.password=pgwtwprvdcashxss
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+spring.mail.properties.mail.smtp.starttls.required=true

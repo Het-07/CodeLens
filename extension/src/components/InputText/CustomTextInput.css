@@ -1,0 +1,14 @@
+.custom-input {
+    color: var(--dark);
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Poppins' , sans-serif;
+  }
+
+.custom-input:focus {
+    color: var(--dark);
+}
