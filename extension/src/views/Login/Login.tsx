@@ -32,7 +32,7 @@ const LoginPage = ({ onRegister }) => {
         if (loggedUser) {
           const userDetails = loggedUser.body;
           alert("User logged in successfully");
-          await setToLocalStorage({ token: userDetails.token, userId: userDetails.user_details.userId });
+          await setToLocalStorage({ token: userDetails.token, userId: userDetails.user_details.userId, isLoggedIn: true });
           window.close();
         } else {
           alert("Invalid credentials");

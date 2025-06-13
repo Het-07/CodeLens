@@ -26,23 +26,19 @@ export const Popup = () => {
   };
 
   useEffect(() => {
-    chrome.cookies.get(
-      { url: CONFIG.ORIGIN, name: "jwtToken" },
-      async (cookie) => {
-        const response = await getFromLocalStorage([
-          STORAGE_KEYS.USERID,
-          STORAGE_KEYS.IS_LOGGED_IN,
-        ]);
+    const checkLoggedIn = async () => {
+      const response = await getFromLocalStorage([
+        STORAGE_KEYS.USERID,
+        STORAGE_KEYS.IS_LOGGED_IN,
+      ]);
 
-        if (cookie) {
-          setIsLoggedIn(true);
-          await setToLocalStorage({ token: cookie.value });
-        } else {
-          setIsLoggedIn(false);
-          setToLocalStorage({ isLoggedIn: false });
-        }
+      if(response.isLoggedIn) {
+        setIsLoggedIn(true);
+      }else {
+        setIsLoggedIn(false)
       }
-    );
+    }
+    checkLoggedIn();
   }, []);
 
   return (
