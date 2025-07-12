@@ -1,7 +1,3 @@
-<div style="align-items: center;">
-   <img src="./frontend/src/assets/file.svg" width="200" height="200" alt="Logo" />
-</div>
-
 # CodeLens
 
 CodeLens is a powerful, all-in-one Chrome extension and web application designed to simplify code comprehension and documentation. Leveraging llama model , CodeLens enables users to summarize code snippets, define technical terms, and generate sharable documentation—directly within the browser.
