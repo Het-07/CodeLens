@@ -200,7 +200,7 @@ This launches:
    spring.application.name=backend
    spring.profiles.active=dev
    spring.data.mongodb.repositories.enabled=true
-   spring.mail.username=csci5308.group01@gmail.com
+   spring.mail.username=xxx@gmail.com
    spring.mail.password=pgwtwprvdcashxss
    llama.bot.url=http://localhost:11434/api/generate
 ```
